@@ -1,0 +1,67 @@
+// media query starts 
+
+// @media only screen and (max-width : 840px) {
+//     header{
+//         background-size: 100% 100% !important;
+//         background-repeat: no-repeat !important;
+//     }
+// }
+
+// @media only screen and (max-width : 526px) {
+//     header{
+//         background-size: 100% 80% !important;
+//     }
+// }
+// @media only screen and (max-width : 526px) {
+//     header{
+//         background-size: 100% 60% !important;
+//     }
+// }
+
+// media query ends 
+
+
+body{
+    background-color: rgb(66, 4, 4);
+    margin: 0px;
+
+    header{
+        // background: url("/img/birthday_bg.jpg");
+        background-color: rgb(246, 199, 217);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-origin: content-box;
+        background-repeat: repeat-y;
+        width: 100vw;
+        height: 100vh;
+        img{
+            width: 100%;
+            transform: scale(0.7);
+            position: absolute;
+            bottom: 0px;
+            animation-name: "fly";
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes fly {
+            0%{
+                bottom: 0px;
+            }
+            20%{
+                bottom: 15%;
+            }
+            40%{
+                bottom: 35%;
+            }
+            60%{
+                bottom: 45%;
+            }
+            80%{
+                bottom: 55%;
+            }
+
+        }
+    }
+}
