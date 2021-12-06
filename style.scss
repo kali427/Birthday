@@ -1,37 +1,12 @@
-// media query starts 
 
-// @media only screen and (max-width : 840px) {
-//     header{
-//         background-size: 100% 100% !important;
-//         background-repeat: no-repeat !important;
-//     }
-// }
-
-// @media only screen and (max-width : 526px) {
-//     header{
-//         background-size: 100% 80% !important;
-//     }
-// }
-// @media only screen and (max-width : 526px) {
-//     header{
-//         background-size: 100% 60% !important;
-//     }
-// }
-
-// media query ends 
 
 
 body{
-    background-color: rgb(66, 4, 4);
+    background-color: rgb(246, 199, 217);
     margin: 0px;
 
     header{
-        // background: url("/img/birthday_bg.jpg");
         background-color: rgb(246, 199, 217);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-origin: content-box;
-        background-repeat: repeat-y;
         width: 100vw;
         height: 100vh;
         img{
@@ -48,19 +23,10 @@ body{
         }
         @keyframes fly {
             0%{
-                bottom: -5%;
+                bottom: -75%;
             }
-            // 20%{
-            //     bottom: 15%;
-            // }
-            // 40%{
-            //     bottom: 35%;
-            // }
-            // 60%{
-            //     bottom: 45%;
-            // }
             50%{
-                bottom: 45%;
+                bottom: 20%;
             }
             100%{
                 bottom: 100%;
@@ -72,13 +38,13 @@ body{
         align-items: center;
         justify-content: center;
 
-        h1{
+        h1, h2{
             text-align: center;
             line-height: 100px;
             font-size: 70px;
             font-family: 'Alfa Slab One', cursive;
             color: rgb(248, 105, 113);
-            text-shadow: 2px 2px 1px white;
+            text-shadow: 4px 4px 7px white;
         }
 
     }

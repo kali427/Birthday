@@ -1,14 +1,10 @@
 body {
-  background-color: #420404;
+  background-color: #f6c7d9;
   margin: 0px;
 }
 
 body header {
   background-color: #f6c7d9;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-origin: content-box;
-  background-repeat: repeat-y;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -42,10 +38,10 @@ body header img {
 
 @-webkit-keyframes fly {
   0% {
-    bottom: -5%;
+    bottom: -75%;
   }
   50% {
-    bottom: 45%;
+    bottom: 20%;
   }
   100% {
     bottom: 100%;
@@ -54,22 +50,22 @@ body header img {
 
 @keyframes fly {
   0% {
-    bottom: -5%;
+    bottom: -75%;
   }
   50% {
-    bottom: 45%;
+    bottom: 20%;
   }
   100% {
     bottom: 100%;
   }
 }
 
-body header h1 {
+body header h1, body header h2 {
   text-align: center;
   line-height: 100px;
   font-size: 70px;
   font-family: 'Alfa Slab One', cursive;
   color: #f86971;
-  text-shadow: 2px 2px 1px white;
+  text-shadow: 4px 4px 7px white;
 }
 /*# sourceMappingURL=style.css.map */
