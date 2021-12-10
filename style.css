@@ -1,14 +1,31 @@
-@media only screen and (min-width: 587px) {
+@media only screen and (min-width: 576px) {
   .fly {
     -webkit-transform: scale(0.5) !important;
             transform: scale(0.5) !important;
+    -webkit-animation-name: "fly0" !important;
+            animation-name: "fly0" !important;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 576px) {
+  h1, h2 {
+    font-size: 60px !important;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .fly {
+    -webkit-animation-name: "fly1" !important;
+            animation-name: "fly1" !important;
+  }
+}
+
+@media only screen and (min-width: 850px) {
   .fly {
     -webkit-transform: scale(0.4) !important;
             transform: scale(0.4) !important;
+    -webkit-animation-name: "fly2" !important;
+            animation-name: "fly2" !important;
   }
 }
 
@@ -59,25 +76,97 @@ body header .fly {
 
 @-webkit-keyframes fly {
   0% {
-    bottom: -75%;
+    bottom: -75vh;
   }
   50% {
-    bottom: 20%;
+    bottom: 20vh;
   }
   100% {
-    bottom: 100%;
+    bottom: 100vh;
   }
 }
 
 @keyframes fly {
   0% {
-    bottom: -75%;
+    bottom: -75vh;
   }
   50% {
-    bottom: 20%;
+    bottom: 20vh;
   }
   100% {
-    bottom: 100%;
+    bottom: 100vh;
+  }
+}
+
+@-webkit-keyframes fly0 {
+  0% {
+    bottom: -75vh;
+  }
+  50% {
+    bottom: 10vh;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+
+@keyframes fly0 {
+  0% {
+    bottom: -75vh;
+  }
+  50% {
+    bottom: 10vh;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+
+@-webkit-keyframes fly1 {
+  0% {
+    bottom: -85vh;
+  }
+  50% {
+    bottom: -10vh;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+
+@keyframes fly1 {
+  0% {
+    bottom: -85vh;
+  }
+  50% {
+    bottom: -10vh;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+
+@-webkit-keyframes fly2 {
+  0% {
+    bottom: -100vh;
+  }
+  50% {
+    bottom: -30vh;
+  }
+  100% {
+    bottom: 100vh;
+  }
+}
+
+@keyframes fly2 {
+  0% {
+    bottom: -100vh;
+  }
+  50% {
+    bottom: -30vh;
+  }
+  100% {
+    bottom: 100vh;
   }
 }
 
