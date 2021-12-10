@@ -1,0 +1,55 @@
+// variables 
+$y1: rgb(168, 99, 27);
+$y2: rgb(220, 170, 65);
+$y3: rgb(234, 199, 107);
+$y4: rgb(250, 239, 199);
+$y5: rgb(252, 246, 226);
+
+// variables 
+
+
+body{
+    margin: 0px;
+    background: linear-gradient(to right, black, $y1, black);
+
+    header{
+
+        .decoration{
+            width: 100vw;
+            height: 50vh;
+            .balloons{
+                height: 100vh;
+                width: 100vw;
+                background: url(./img/bg.png);
+                background-origin: content-box;
+                background-size: 50%;
+                background-repeat: no-repeat;
+                // transform: scaleY(.5);
+            }
+            .mirror{
+                position: absolute;
+                top: 0px;
+                -webkit-transform: scaleX(-1);
+                transform: scaleX(-1);
+            }
+        }
+
+        .hbd{
+            background: linear-gradient(to left, black, rgba(0, 0, 0, 0.563), black);
+            text-align: center;
+            h1{
+                background: linear-gradient(to left, black, $y1, black);
+                display: inline-block;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+                font-size: 100px;
+                word-spacing: 70px;
+                letter-spacing: 2px;
+                margin: auto;
+            }
+        }
+    
+    }
+
+}

@@ -1,1 +1,46 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0px;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(#a8631b), to(black));
+  background: linear-gradient(to right, black, #a8631b, black);
+}
+
+body header .decoration {
+  width: 100vw;
+  height: 50vh;
+}
+
+body header .decoration .balloons {
+  height: 100vh;
+  width: 100vw;
+  background: url(./img/bg.png);
+  background-origin: content-box;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+body header .decoration .mirror {
+  position: absolute;
+  top: 0px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+body header .hbd {
+  background: -webkit-gradient(linear, right top, left top, from(black), color-stop(rgba(0, 0, 0, 0.563)), to(black));
+  background: linear-gradient(to left, black, rgba(0, 0, 0, 0.563), black);
+  text-align: center;
+}
+
+body header .hbd h1 {
+  background: -webkit-gradient(linear, right top, left top, from(black), color-stop(#a8631b), to(black));
+  background: linear-gradient(to left, black, #a8631b, black);
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 100px;
+  word-spacing: 70px;
+  letter-spacing: 2px;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
