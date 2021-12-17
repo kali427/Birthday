@@ -1,10 +1,53 @@
+// animations
+
+
+@keyframes fly {
+    0%{
+        top: 100%;
+    }
+    50%{
+        top: 50%;
+        transform: translateX(-30%);
+    }
+    100%{
+        top: -10%;
+    }
+}
+
+// animations ends
+
+
 // media queries 
+
+@media only screen and (max-width : 911px) {
+    .main{
+        .candle{
+            margin: 0px !important;
+            margin-right: 70px !important;
+            z-index: 3 !important;
+        }
+    }    
+}
+
 @media only screen and (max-width : 750px) {
     .hbd{
         h1{
             font-size: 10vw !important;
         }
-    }    
+    }
+
+    .main{
+        .candle{
+            .candle_img{
+                height: 350px !important;
+            }
+        }
+    }
+    .wishes{
+        img{
+            height: 400px !important;
+        }
+    }
 }
 
 @media only screen and (max-width : 600px) {
@@ -12,7 +55,114 @@
         h1{
             font-size: 12vw !important;
         }
-    }    
+    }   
+
+    .main{
+        height: 500px !important;
+        margin-top: 40vh !important;
+        .candle{
+            .candle_img{
+                height: 280px !important;
+            }
+        }
+    }
+
+    .wishes{
+        img{
+            height: 330px !important;
+        }
+    } 
+    .copyright{
+        p{
+            font-size: 13px;
+        }
+    }
+}
+
+@media only screen and (max-width : 572px) {
+
+    .main{
+        height: 430px !important;
+        .candle{
+            .candle_img{
+                height: 250px !important;
+                margin-top: 70px !important;
+            }
+        }
+    }
+
+    .wishes{
+        img{
+            height: 330px !important;
+        }
+        .para{
+            p{
+                padding: 7px 8vw 7px 30px !important;
+            }
+        }
+    } 
+    
+}
+
+@media only screen and (max-width : 500px) {
+    .wishes{
+        .para{
+            margin-top: 120px !important;
+        }
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    .hbd{
+        margin-top: -50px ;
+    }
+    .main{
+        margin-top: 30vh !important;
+    }
+}
+
+@media only screen and (max-width : 420px) {
+    
+    .main{
+        .candle{
+            .candle_img{
+                height: 230px !important;
+            }
+        }
+    }
+
+    .wishes{
+        .para{
+            transform: scale(.7);
+            margin-top: 130px !important;
+            p{
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+    .copyright{
+        p{
+            font-size: 11px;
+        }
+    }
+}
+
+@media only screen and (max-width : 385px) {
+    
+    .main{
+        .candle{
+            .candle_img{
+                margin-left: -30px !important;
+            }
+        }
+    }
+
+    .para{
+        p{
+            padding: 7px 0vw 7px 0px !important;
+        }
+    }
 }
 
 // media queries 
@@ -30,13 +180,17 @@ $y5: rgb(252, 246, 226);
 body{
     margin: 0px;
     background: linear-gradient(to right, black, $y1, black);
+    overflow-x: hidden;
 
     header{
+
 
         .decoration{
             width: 100vw;
             height: 50vh;
+            z-index: 1;
             .balloons{
+                z-index: 2;
                 height: 100vh;
                 width: 100vw;
                 background: url(./img/bg.png);
@@ -46,6 +200,7 @@ body{
                 // transform: scaleY(.5);
             }
             .mirror{
+                z-index: 1;
                 position: absolute;
                 top: 0px;
                 -webkit-transform: scaleX(-1);
@@ -59,7 +214,9 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 1;
             h1{
+                z-index: 1;
                 background: linear-gradient(to left, black, $y1, black);
                 display: inline;
                 -webkit-background-clip: text;
@@ -73,6 +230,110 @@ body{
             }
         }
     
+    }
+
+    .fly{
+        margin: 0px;
+        position: fixed;
+        top: 0px;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        
+        .moji{
+            opacity: 0.5;
+            height: 100px;
+            filter: grayscale(.4);
+            position: relative;
+            top: 100%;
+            animation-name: "fly";
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        .m{
+            animation-delay: 1.1s;
+            left: 20vw;
+        }
+        
+        .o{
+            animation-delay: 3.2s;
+            left: 40vw;
+        }
+        
+        .j{
+            animation-delay: 1.92s;
+            left: 60vw;
+        }
+        
+        .i{
+            animation-delay: 0.5s;
+            left: 80vw;
+        }
+    }
+
+    .main{
+        margin-top: 45vh;
+        height: 700px;
+        width: 100vw;
+        background: black;
+        display: flex;
+        align-items: center;
+
+        .candle{
+            width: 30vw;
+            margin: auto 70px;
+            z-index: 1;
+            .candle_img{
+                height: 400px;
+                margin-top: 100px;
+            }
+        }
+
+        .wishes{
+            z-index: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .para{
+                margin-top: 100px;
+                z-index: 1;
+                background: rgba(0, 0, 0, 0.549);
+                p{                
+                    background: linear-gradient(to right, rgb(254, 255, 237), rgb(245, 202, 115), rgb(153, 96, 50), rgba(0, 0, 0, 0.192));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    z-index: 1;
+                    padding: 7px 10vw 7px 80px;
+                    font-family: sans-serif;
+                    line-height: 24px;
+                    
+                }
+            }
+            
+            img{
+                height: 450px;
+                opacity: 0.7;
+                position: absolute;
+                
+            }
+        }
+        
+    }
+
+    .copyright{
+        width: 100vw;
+        height: 20px;
+        margin-top: -10px !important;
+        p{
+            font-family: sans-serif;
+            text-align: center;
+            font-weight: bold;
+            
+        }
     }
 
 }
